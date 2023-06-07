@@ -1,0 +1,36 @@
+{
+  "master": {
+    "slaves": [
+      {
+        "unitId": 1,
+        "deviceName": "Temp Sensor",
+        "attributesPollPeriod": 5000,
+        "timeseriesPollPeriod": 5000,
+        "sendDataOnlyOnChange": true,
+        "attributes": [
+          {
+            "byteOrder": "BIG",
+            "tag": "test",
+            "type": "long",
+            "functionCode": 4,
+            "registerCount": 1,
+            "address": 4
+          }
+        ],
+        "host": null,
+        "port": "/dev/ttyUSB0",
+        "type": "serial",
+        "method": "rtu",
+        "timeout": 35,
+        "byteOrder": null,
+        "wordOrder": null,
+        "retries": null,
+        "retryOnEmpty": null,
+        "retryOnInvalid": null,
+        "baudrate": 19200,
+        "pollPeriod": 5000
+      }
+    ]
+  },
+  "slave": null
+}

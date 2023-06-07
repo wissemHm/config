@@ -1,0 +1,97 @@
+{ "master": {
+    "slaves": [
+      {
+        "unitId": 1,
+        "deviceName": "Temp Sensor1",
+        "attributesPollPeriod": 1000,
+        "timeseriesPollPeriod": 1000,
+        "sendDataOnlyOnChange": false,
+        "attributes": [
+          {
+            "byteOrder": "BIG",
+            "tag": "test",
+            "type": "16uint",
+            "functionCode": 1,
+            "registerCount": 1,
+            "address": 1
+          }
+        ],
+        "timeseries": [
+          {
+            "tag": "temperature",
+            "type": "16int",
+            "functionCode": 4,
+            "objectsCount": 1,
+            "address": 4
+          },
+          {
+            "tag": "humidity",
+            "type": "16int",
+            "functionCode": 4,
+            "objectsCount": 1,
+            "address": 5
+          }
+        ],
+        "host": null,
+        "port": "/dev/ttyUSB0",
+        "type": "serial",
+        "method": "rtu",
+        "timeout": 35,
+        "byteOrder": "BIG",
+        "wordOrder": "BIG",
+        "retries": true,
+        "retryOnEmpty": true,
+        "retryOnInvalid": true,
+        "baudrate": 19200,
+        "pollPeriod": 4000
+      },
+      {
+        "unitId": 2,
+        "deviceName": "wissem",
+        "attributesPollPeriod": 5000,
+        "timeseriesPollPeriod": 5000,
+        "sendDataOnlyOnChange": true,
+        "attributes": [
+          {
+            "byteOrder": "BIG",
+            "tag": "test",
+            "type": "long",
+            "functionCode": 4,
+            "registerCount": 1,
+            "address": 4
+          }
+        ],
+        "timeseries": [
+          {
+            "tag": "yo",
+            "type": "16uint",
+            "functionCode": 4,
+            "objectsCount": 1,
+            "address": 1
+          },
+          {
+            "tag": "ho",
+            "type": "16uint",
+            "functionCode": 4,
+            "objectsCount": 1,
+            "address": 2
+          }
+        ],
+        "host": null,
+        "port": "/dev/ttyUSB0",
+        "type": "serial",
+        "method": "rtu",
+        "timeout": 35,
+        "byteOrder": "BIG",
+        "wordOrder": "BIG",
+        "retries": true,
+        "retryOnEmpty": true,
+        "retryOnInvalid": true,
+        "baudrate": 19200,
+        "pollPeriod": 5000
+      }
+    ]
+  },
+  "slave": null
+}
+
